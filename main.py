@@ -11,13 +11,14 @@ def compress_image(input_path, output_path, output_quality):
     '''
 
     img = Image.open(input_path)
-    img.save(output_path, optimize = True, output_quality = output_quality)
+    print(img)
+    img.save(output_path, optimize = True, quality = int(output_quality))
 
 inputPath = input("Enter Local Path to the Input Image : ")
 outputPath = input("Enter Output Path for the Image : ")
 outputQuality = input("Enter Desired Quality of the Image (0-100) : ")
 
-print("IP: ", inputPath, "OP: ", outputPath, "OQ: ", outputQuality)
+print("IP: ", inputPath, "OP: ", outputPath, "OQ: ", outputQuality, "\n")
 
 compress_image(inputPath, outputPath, outputQuality)
 
