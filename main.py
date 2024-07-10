@@ -1,6 +1,3 @@
-import sys
-sys.path.append("/opt/anaconda3/lib/python3.11/site-packages")
-
 from PIL import Image
 
 def compress_image(input_path, output_path, quality):
